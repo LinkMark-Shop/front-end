@@ -7,7 +7,8 @@ const Input = () => {
 
   const lista = [1, 2, 3, 4, 5, 6];
   console.log("AAAAAAAAA");
-
+  console.log("AAAAAAAAA");
+  console.log("AAAAAAAAA");
   return (
     <div>
       {lista.map((item, id) => (
