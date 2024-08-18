@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+
+    "aaron-bond.better-comments",
+    "dbaeumer.vscode-eslint",
+    "sonarsource.sonarlint-vscode",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
