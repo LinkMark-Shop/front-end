@@ -9,12 +9,13 @@ const Input = () => {
 
   const lista = [1, 2, 3, 4, 5, 6]
   console.log("value", value)
+  // teste
 
   return (
     <div>
       {value && lista.map((item, id) => <div key={id}>{item}</div>)}
       <button
-        className="border-white-100 mt-4 rounded-sm border-2 p-2"
+        className="mt-4 rounded-sm border-2 border-white-100 p-2"
         onClick={() => setValue((value) => !value)}
       >
         Clique Aqui
