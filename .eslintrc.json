@@ -1,3 +1,35 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": { "browser": true, "es2021": true, "jest": true, "node": true },
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "prettier",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ],
+  "ignorePatterns": [
+    "node_modules/",
+    ".github/",
+    "lint-staged.config.js",
+    "src/types/graphql-env.d.ts"
+  ],
+  "overrides": [
+    {
+      "files": ["tailwind.config.*", "**/styles.ts"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off"
+      }
+    }
+  ],
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error", "info"] }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
 }
