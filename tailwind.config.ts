@@ -7,10 +7,7 @@ module.exports = {
   },
   theme: {
     colors: {
-      text: {
-        title: "#000",
-        text: "#1E1E1E",
-      },
+      text: "#1E1E1E",
       primary: {
         100: "#C1DCDC",
       },
