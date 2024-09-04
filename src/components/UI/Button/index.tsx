@@ -11,15 +11,13 @@ export const buttonVariants = tv({
   base: "duration-300 transition-colors inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   variants: {
     variant: {
-      default: "bg-primary-100 text-text hover:bg-primary/90 icon:stroke-white",
-      destructive:
-        "bg-destructive text-destructive-foreground hover:bg-destructive/90 icon:stroke-white",
+      default: "bg-primary text-text hover:bg-primary/70 icon:stroke-white",
+      destructive: "bg-red-80 text-white hover:bg-red-40 icon:stroke-white",
       outline:
-        "border border-primary bg-background text-primary hover:bg-primary hover:text-primary-foreground icon:stroke-primary icon:hover:stroke-primary-foreground",
+        "border border-primary bg-background  hover:bg-primary hover:text-black-100 icon:stroke-primary icon:hover:stroke-black-10",
       secondary:
-        "bg-secondary text-secondary-foreground hover:bg-secondary/80 icon:stroke-secondary-foreground",
-      ghost:
-        "hover:bg-accent hover:text-accent-foreground icon:hover:stroke-accent-foreground",
+        "bg-white text-text hover:bg-primary/80 icon:stroke-primary/80",
+
       link: "text-primary icon:stroke-primary underline-offset-4 hover:underline ",
     },
     size: {
