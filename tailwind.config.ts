@@ -6,6 +6,13 @@ module.exports = {
     hoverOnlyWhenSupported: true,
   },
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     colors: {
       text: "#1E1E1E",
       primary: "#C1DCDC",
