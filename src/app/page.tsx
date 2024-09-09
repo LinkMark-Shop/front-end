@@ -1,9 +1,9 @@
-import Navbar from "@/components/Navbar"
+import HomePageTemplate from "@/templates/HomePage"
 
 export default function Home() {
   return (
-    <main className="max-w-[1200px]">
-      <Navbar />
+    <main className="mx-auto flex flex-col">
+      <HomePageTemplate />
     </main>
   )
 }
