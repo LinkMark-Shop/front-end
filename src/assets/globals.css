@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -29,6 +35,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 @layer utilities {
