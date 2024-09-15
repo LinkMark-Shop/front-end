@@ -15,7 +15,11 @@ module.exports = {
     },
     colors: {
       text: "#1E1E1E",
-      primary: "#C1DCDC",
+      primary: {
+        140: "#76acac",
+        100: "#C1DCDC",
+        60: "#c1dcdc99",
+      },
       black: {
         100: "#000000",
         80: "#1E1E1E",

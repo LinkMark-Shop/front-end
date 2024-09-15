@@ -7,7 +7,7 @@ const alertVariants = tv({
   base: "relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7",
   variants: {
     variant: {
-      default: "bg-primary text-text",
+      default: "bg-primary-100 text-text",
       destructive:
         "border-red-60 text-red-100 dark:border-red-100 [&>svg]:text-red-100",
     },
