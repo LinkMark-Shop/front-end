@@ -27,7 +27,7 @@ const CARDS_ABOUT_US = [
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="mt-4 flex flex-col items-center gap-8">
       <div className="flex flex-col items-center gap-2">
         <h3 className="text-2xl font-bold">Sobre nós</h3>
         <p className="text-sm text-black-60">
@@ -35,10 +35,10 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
         {CARDS_ABOUT_US.map((card, id) => (
           <div className="flex flex-col items-center gap-2" key={id}>
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary p-2">
+            <div className="bg-primary-100 flex h-12 w-12 items-center justify-center rounded-full p-2">
               {card.icon}
             </div>
             <h4>{card.title}</h4>

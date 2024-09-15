@@ -2,7 +2,7 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-primary p-4">
+    <footer className="bg-primary-100 w-full p-4">
       <div className="flex flex-col items-start gap-2">
         <h3 className="font-bold">Link-Mark Shop</h3>
 
