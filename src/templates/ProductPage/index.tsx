@@ -3,6 +3,7 @@ import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import { Button } from "@/components/UI/Button"
 import { Spinner } from "@/components/UI/Spinner"
+import ShoppingCart from "@material-symbols/svg-400/rounded/shopping_cart.svg"
 import parseNumberToPrice from "@/utils/helpers/parseNumberToPrice"
 import { ProductProps } from "@/utils/types"
 
@@ -30,7 +31,7 @@ const ProductTemplate = ({ params }: { params: { id: number } }) => {
   return (
     <div className="flex flex-col items-center gap-12">
       <Navbar />
-      <div className="flex min-h-[77.5vh] w-full flex-col items-center justify-center px-4">
+      <div className="flex min-h-[79.6vh] w-full flex-col items-center justify-center px-4">
         {data ? (
           <div className="flex w-full flex-col items-center justify-center gap-8 md:flex-row">
             <div>
@@ -42,7 +43,7 @@ const ProductTemplate = ({ params }: { params: { id: number } }) => {
                 />
               </div>
             </div>
-            <div className="my-10 flex flex-col items-center gap-4">
+            <div className="my-10 flex flex-col items-center gap-6">
               <div className="justify-start-start flex w-full flex-col">
                 <h3 className="text-start text-xl font-bold">{data.name}</h3>
                 <p className="text-black-40">
@@ -56,7 +57,7 @@ const ProductTemplate = ({ params }: { params: { id: number } }) => {
                   <p className="text-primary-140 text-lg font-bold">
                     {parseNumberToPrice(parseFloat(data.price))}
                   </p>
-                  <div>Quantidade</div>
+                  {/* <div>Quantidade</div> */}
                 </div>
 
                 <div>
@@ -65,7 +66,10 @@ const ProductTemplate = ({ params }: { params: { id: number } }) => {
                   </p>
                 </div>
               </div>
-              <Button className="w-full">+ Adicionar ao Carrinho</Button>
+              <Button className="w-full">
+                <ShoppingCart className="mr-2 h-6 w-6" /> + Adicionar ao
+                Carrinho
+              </Button>
               <div className="border-primary-60 overflow-y max-h-[175px] max-w-[350px] overflow-y-auto rounded-md border p-4">
                 <p className="text-sm">{data.description}</p>
               </div>
