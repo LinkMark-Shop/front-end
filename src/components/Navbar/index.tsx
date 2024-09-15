@@ -12,7 +12,7 @@ const NAVIGATIONS = [
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex h-[80px] w-full items-center px-4 ">
+    <nav className="flex h-[80px] w-full items-center px-4 shadow-[1px_1px_5px_-2px_rgba(0,0,0,0.3)]">
       <div className="mx-auto flex w-full max-w-[1200px] justify-between">
         <ul className="flex gap-4">
           {NAVIGATIONS.map((item, id) => (
