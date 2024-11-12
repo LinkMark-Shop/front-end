@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 30vw;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.teste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #c1dcdc, #a8b8b8);
+}
+
+.teste2 {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.teste5 {
+  margin-top: 15px;
+  color: #777;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.custom-input:focus {
+  border-color: #91cce2;
+  box-shadow: 0 0 8px rgba(55, 173, 217, 0.4);
+  outline: none;
+}
+
+.login-input {
+  margin-bottom: 20px;
+}
+
+.custom-button {
+  width: 45%;
+  background-color: #6abfbf;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+  margin: 10px 5px;
+}
+
+.custom-button:hover {
+  background-color: #4e9a9a;
+  transform: scale(1.05);
+}
+
+.custom-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0f4154;
+  display: block;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90vw;
+  }
+
+  .custom-button {
+    font-size: 16px;
+  }
+
+  .custom-label {
+    font-size: 14px;
+  }
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half-width {
+  width: 48%;
+}
+
+.image-preview-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-img {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.toastify-container {
+  font-size: 16px;
+}
+
+.toastify-success {
+  background-color: #4caf50;
+  color: white;
+}
